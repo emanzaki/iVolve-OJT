@@ -15,6 +15,8 @@ Transfer Public Key:
 ```bash
 ssh-copy-id -i ~/.ssh/ivolve.pub kira@remote_machine_ip
 ```
+![SSH Configuration](../images/lab3.png)
+
 Test Key Transfer:
 ```bash
 ssh -i ~/.ssh/ivolve kira@remote_machine_ip
@@ -28,7 +30,6 @@ echo "Host ivolve
 
 chmod 600 ~/.ssh/config
 ```
-![SSH Configuration](../images/lab3.png)
 
 Test SSH Connection:
 ```bash
