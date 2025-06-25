@@ -11,4 +11,7 @@ The repository is structured into several directories, each containing specific 
     2. Lab 2: Disk Management and Logical Volume Setup
     3. Lab 3: SSH Configurations
 2. Ansible
+    1. Lab 4: Ansible Installation
+    2. Lab 5: Ansible Playbooks for Web Server Configuration
+    3. Lab 6: Ansible Roles for Application Deployment 
 
