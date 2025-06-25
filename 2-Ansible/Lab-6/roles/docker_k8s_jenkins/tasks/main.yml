@@ -1,0 +1,4 @@
+---
+- import_tasks: docker.yml
+- import_tasks: kubectl.yml
+- import_tasks: jenkins.yml
