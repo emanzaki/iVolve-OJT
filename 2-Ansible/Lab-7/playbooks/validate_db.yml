@@ -1,0 +1,16 @@
+---
+- name: Validate MySQL setup
+  hosts: all
+  become: yes
+  vars_files:
+    - ../vars/secrets.yml
+  tasks:
+    - name: Check database access
+      command: >
+        mysql -u {{ mysql_ivolive_user }} -p{{ mysql_ivolive_password }} -e "SHOW DATABASES;"
+      register: db_check
+      changed_when: false
+
+    - name: Display databases
+      debug:
+        var: db_check.stdout_lines

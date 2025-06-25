@@ -1,0 +1,39 @@
+---
+- name: Configure MySQL server and database on Ubuntu
+  hosts: web
+  become: yes
+  vars_files:
+    - ../vars/secrets.yml
+  tasks:
+    - name: Update apt cache
+      ansible.builtin.apt:
+        update_cache: yes
+
+    - name: Install MySQL server
+      ansible.builtin.apt:
+        name: mysql-server
+        state: present
+
+    - name: Ensure MySQL service is running and enabled
+      ansible.builtin.service:
+        name: mysql
+        state: started
+        enabled: yes
+
+    - name: Create iVolive database
+      mysql_db:
+        name: iVolive
+        state: present
+        login_user: root
+        login_password: ""
+        login_unix_socket: /var/run/mysqld/mysqld.sock
+
+    - name: Create user with all privileges on iVolive DB
+      mysql_user:
+        name: "{{ mysql_ivolive_user }}"
+        password: "{{ mysql_ivolive_password }}"
+        priv: "iVolive.*:ALL"
+        state: present
+        login_user: root
+        login_password: ""
+        login_unix_socket: /var/run/mysqld/mysqld.sock
