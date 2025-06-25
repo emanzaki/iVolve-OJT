@@ -1,0 +1,11 @@
+---
+- name: Deploy Docker, kubectl, and Jenkins
+  hosts: web
+  become: yes
+  roles:
+    - docker_k8s_jenkins
+
+  post_tasks:
+    - name: Display Jenkins admin password
+      debug:
+        msg: "Jenkins initial admin password: {{ jenkins_password.stdout }}"
