@@ -13,5 +13,6 @@ The repository is structured into several directories, each containing specific 
 2. Ansible
     1. Lab 4: Ansible Installation
     2. Lab 5: Ansible Playbooks for Web Server Configuration
-    3. Lab 6: Ansible Roles for Application Deployment 
-
+    3. Lab 6: Ansible Roles for Application Deployment
+    4. Lab 7: Ansible Vault
+    5. Lab 8: Ansible Dynamic Inventories

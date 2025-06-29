@@ -43,5 +43,15 @@ run this command after creating the file
 
 ```bash
 ansible -i playbook.yml --tags create_ec2 --ask-vault-pass 
+```
+![Ansible Dynamic Inventory](../images/7.png)
+
+ec2 on aws console
+![EC2 Instance](../images/7-3.png)
+
+run this for listing the target hosts in Dynamic inventory
+
+```bash
 ansible-inventory -i aws_ec2.yaml --list
 ```
+![Ansible Inventory List](../images/7-2.png)
