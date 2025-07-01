@@ -1,4 +1,5 @@
-# Lab 12: Multi-Stage Build for a Node.js App
+# Lab 12: Multi-Stage Build for a Java App
+
 Clone the Application Code https://github.com/Ibrahim-Adel15/Docker-1.git
 Write Dockerfile with Multi-stage.
 Use Maven base image for first stag

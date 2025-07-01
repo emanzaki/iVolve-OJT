@@ -19,3 +19,7 @@ The repository is structured into several directories, each containing specific 
 3. Build Tools
     1. Lab 9: Build Java App using Gradle
     2. Lab 10: Build Java App using Maven
+4. Docker
+    1. Lab 11: Run Java Spring Boot App in a Container
+    2. Lab 12: Multi-Stage Build for a Java App
+    3. Lab 13: Docker Environment Variables
