@@ -19,3 +19,5 @@ Use base64 encoding for the Secret data values.
 kubectl apply -f configmap.yaml
 kubectl apply -f secret.yaml
 ```
+
+![configmap](../images/21.png)
