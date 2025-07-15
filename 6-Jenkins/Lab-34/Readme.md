@@ -1,7 +1,8 @@
 # Lab 34: Jenkins Pipeline for Application Deployment
 
- • Clone source code and Dockerfile from: https://github.com/Ibrahim-Adel15/Jenkins_App.git
- • Create a pipeline that automates the following processes:
+• Clone source code and Dockerfile from: https://github.com/Ibrahim-Adel15/Jenkins_App.git
+
+• Create a pipeline that automates the following processes:
  1. Run Unit Test
  2. Build App
  3. Build Docker image from Dockerfile in GitHub.
